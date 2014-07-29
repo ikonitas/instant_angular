@@ -1,20 +1,24 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html ng-app>
   <head>
+
     <title>Welcome to AngularJS</title>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
-    <script>
-      function Clock($scope) {
-        $scope.currentTime = new Date();
-      }
-    </script>
+    <script src='{% static "home/angular/guidebook.js" %}'></script>
+
+    <script src='{% static "home/angular/controller/chapterController.js" %}'></script>
+    <script src='{% static "home/angular/controller/notesControllers.js" %}'></script>
+    <script src='{% static "home/angular/model/noteModel.js" %}'></script>
+    <script src='{% static "home/angular/model/chapterModel.js" %}'></script>
+    <link rel='stylesheet' href='{% static "home/angular/view/styles.css" %}'>
+
   </head>
   <body>
     <h1>Hello, World.</h1>
     {% verbatim %}
-      <p ng-controller="Clock">
-        The Current time is  {{ currentTime|date:'h:mm:ss a' }}.
-      </p>
+      <div ng-view>
+      </div>
     {% endverbatim %}
   </body>
 </html>

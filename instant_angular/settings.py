@@ -84,3 +84,11 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'instant_angular/static'),
+)
