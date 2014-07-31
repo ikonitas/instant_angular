@@ -1,6 +1,4 @@
-instant_angular
-===============
-
-Instant Angular JS Started book.
+Instant AngularJS Starter 
+=========================
 
 Simple example how to hook AngularJs with django.
