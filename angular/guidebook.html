@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='Guidebook'>
+  <head>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.js"></script>
+
+    <script src='guidebook.js'></script>
+    <script src='controller/chapter_controller.js'></script>
+    <script src='controller/notes_controllers.js'></script>
+    <script src='model/note_model.js'></script>
+    <script src='model/chapter_model.js'></script>
+    <link rel='stylesheet' href='view/styles.css'>
+    <title>AngularJS Starter Guidebook</title>
+  </head>
+  <body>
+    <h1>Welcome to the AngularJS Starter Guidebook</h1>
+    <div ng-view>
+      <!-- We'll add views here at runtime. -->
+    </div>
+  </body>
+</html>
